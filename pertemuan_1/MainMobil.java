@@ -45,6 +45,9 @@ public class MainMobil {
         System.out.print("\nMasukkan warna mobil: ");
         String warna = input.nextLine();
         m2.setWarna(warna);
+        System.out.print("\nMasukkan waktu tempuh: ");
+        double waktu = input.nextDouble();
+        m2.setWaktu(waktu);
         m2.displayMessage();
 
         input.close();
