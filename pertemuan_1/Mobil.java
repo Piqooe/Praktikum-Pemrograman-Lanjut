@@ -35,11 +35,16 @@ public class Mobil {
         return jam * 3600;
     }
 
+    private double hitungJarak(double kecepatan, double waktu) {
+        return kecepatan * waktu;
+    }
+
     public void displayMessage() {
         System.out.println("Mobil anda adalah bermerek " + manufaktur);
         System.out.println("mempunyai nomor plat " + noPlat);
         System.out.println("serta memililki warna " + warna);
         System.out.println("dan mampu menempuh kecepatan " + String.format("%.2f", kecepatan) + " m/s");
         System.out.println("Waktu tempuh : " + String.format("%.2f", waktu) + " sekon");
+        System.out.println("Jarak tempuh : " + String.format("%.2f", hitungJarak(kecepatan, waktu)) + " meter");
     }
 }
