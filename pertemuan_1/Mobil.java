@@ -45,6 +45,6 @@ public class Mobil {
         System.out.println("serta memililki warna " + warna);
         System.out.println("dan mampu menempuh kecepatan " + String.format("%.2f", kecepatan) + " m/s");
         System.out.println("Waktu tempuh : " + String.format("%.2f", waktu) + " sekon");
-        System.out.println("Jarak tempuh : " + String.format("%.2f", hitungJarak(kecepatan, waktu)) + " meter");
+        System.out.println("Jarak tempuh : " + String.format("%.2f", hitungJarak(kecepatan, waktu) / 1000) + " km");
     }
 }
