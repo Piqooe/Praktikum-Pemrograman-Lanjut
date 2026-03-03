@@ -1,4 +1,4 @@
-package tugas_praktikum.pertemuan_1;
+package tugas_praktikum.pemlanModul1Bab1;
 
 public class Mobil {
     private String noPlat;
