@@ -21,6 +21,12 @@ public class Student {
         age = ag;
     }
 
+    public Student(double math, double english, double science) {
+        mathGrade = math;
+        englishGrade = english;
+        scienceGrade = science;
+    }
+
     public void setName(String n) {
         name = n;
     }
