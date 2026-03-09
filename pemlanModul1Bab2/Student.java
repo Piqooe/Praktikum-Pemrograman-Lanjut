@@ -7,7 +7,6 @@ public class Student {
     private double mathGrade;
     private double englishGrade;
     private double scienceGrade;
-    private double average;
 
     public Student() {
         name = "";
@@ -51,6 +50,10 @@ public class Student {
         scienceGrade = science;
     }
 
+    public boolean statusAkhir() {
+        return getAverage() > 60;
+    }
+
     private double getAverage() {
         double result = 0;
         result = (mathGrade + scienceGrade + englishGrade) / 3;
@@ -62,5 +65,10 @@ public class Student {
         System.out.println("beramalat di " + address);
         System.out.println("berumur " + age);
         System.out.println("mempunyai nilai rata rata " + getAverage());
+        if (statusAkhir()) {
+            System.out.println("Status : Lulus");
+        } else {
+            System.out.println("Status : Tidak Lulus");
+        }
     }
 }
