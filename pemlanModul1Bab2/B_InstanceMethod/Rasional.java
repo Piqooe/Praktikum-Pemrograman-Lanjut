@@ -68,9 +68,26 @@ public class Rasional {
 
     // operator unary += \
     public void unaryPlus(Rasional A) {
-        pembilang = pembilang * A.penyebut + penyebut *
-                A.pembilang;
+        pembilang = pembilang * A.penyebut + penyebut * A.pembilang;
         penyebut *= A.penyebut;
+    }
+
+    // operator -
+    public void kurang(Rasional A) {
+        pembilang = pembilang * A.penyebut - penyebut * A.pembilang;
+        penyebut *= A.penyebut;
+    }
+
+    // operator *
+    public void kali(Rasional A) {
+        pembilang *= A.pembilang;
+        penyebut *= A.penyebut;
+    }
+
+    // operator /
+    public void bagi(Rasional A) {
+        pembilang *= A.penyebut;
+        penyebut *= A.pembilang;
     }
 
     public void cetak() {
