@@ -1,4 +1,4 @@
-package tugas_praktikum.pemlanModul1Bab2;
+package tugas_praktikum.pemlanModul1Bab2.A_Constructor;
 
 import java.util.Scanner;
 
