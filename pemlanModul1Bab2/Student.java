@@ -7,20 +7,24 @@ public class Student {
     private double mathGrade;
     private double englishGrade;
     private double scienceGrade;
+    private static int objectCount = 0;
 
     public Student() {
+        objectCount++;
         name = "";
         address = "";
         age = 0;
     }
 
     public Student(String n, String a, int ag) {
+        objectCount++;
         name = n;
         address = a;
         age = ag;
     }
 
     public Student(double math, double english, double science) {
+        objectCount++;
         mathGrade = math;
         englishGrade = english;
         scienceGrade = science;
@@ -58,6 +62,10 @@ public class Student {
         double result = 0;
         result = (mathGrade + scienceGrade + englishGrade) / 3;
         return result;
+    }
+
+    public static void jumlahObjek() {
+        System.out.println("Jumlah objek Student yang dibuat: " + objectCount);
     }
 
     public void displayMessage() {

@@ -89,6 +89,9 @@ public class MainStudent {
             students[i].displayMessage();
         }
 
+        System.out.println();
+        Student.jumlahObjek();
+
         scanner.close();
     }
 }
