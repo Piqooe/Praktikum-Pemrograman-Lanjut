@@ -1,4 +1,4 @@
-package tugas_praktikum.pemlanModul1Bab3;
+package tugas_praktikum.pemlanModul1Bab3.OverloadingMethod;
 
 import java.util.Scanner;
 
@@ -26,5 +26,6 @@ public class Overloading {
         double double2 = in.nextDouble();
         HitungLuas(integer1, integer2);
         HitungLuas(double1, double2);
+        in.close();
     }
 }
