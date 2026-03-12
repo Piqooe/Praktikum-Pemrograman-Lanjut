@@ -8,8 +8,8 @@ public class Overloading {
         System.out.println("maka hasil luas : " + nilai);
     }
 
-    public static double HitungLuas(double value, double value2) {
-        double nilai = value * value2;
+    public static double HitungLuas(int a, int b) {
+        double nilai = a * b;
         return nilai;
     }
 
