@@ -7,6 +7,10 @@ public class lingkaran {
         this.alas = alas;
     }
 
+    public lingkaran(int tinggi) {
+        this.tinggi = tinggi;
+    }
+
     public lingkaran(int alas, int tinggi) {
         this.alas = alas;
         this.tinggi = tinggi;
