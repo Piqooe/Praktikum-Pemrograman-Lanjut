@@ -7,8 +7,13 @@ public class lingkaran {
         this.alas = alas;
     }
 
-    public lingkaran(int tinggi) {
-        this.tinggi = tinggi;
+    public lingkaran(String alas, String tinggi) {
+        this.alas = parseStringToInt(alas);
+        this.tinggi = parseStringToInt(tinggi);
+    }
+
+    public int parseStringToInt(String angkaString) {
+        return Integer.parseInt(angkaString);
     }
 
     public lingkaran(int alas, int tinggi) {
