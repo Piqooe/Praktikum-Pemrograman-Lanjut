@@ -24,5 +24,12 @@ public class MainAritmatika {
         // memanggil method NONstatic harus melalui objek
         Aritmatika a = new Aritmatika();
         a.hitungPenjumlahan(value1, value2);
+        
+        System.out.print("masukkan string 1 : ");
+        String str1 = in.next();
+        System.out.print("masukkan string 2 : ");
+        String str2 = in.next();
+        double hasilBagi = a.hitungPembagian(str1, str2);
+        System.out.println("nilai pembagian adalah : " + hasilBagi);
     }
 }
