@@ -10,6 +10,7 @@ public class Aritmatika {
     public static void hitungPerkalian(int a, int b) {
         int nilai = a * b;
         System.out.println("nilai perkalian adalah : " + nilai);
+        hitungPenjumlahan(a, b);
     }
 
     public static void hitungPengurangan(int a, int b) {
