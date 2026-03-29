@@ -1,12 +1,12 @@
 package tugas_praktikum.pemlanModul2Bab5.KonstantaFinal;
 
 public class Vehicle1 {
-    private double load;
+    private final double load = 0;
     private final double maxLoad = 10000;
 
-    public Vehicle1 (double max){
-        this.maxLoad = max;
-    }
+    // public Vehicle1 (double max){
+    //    this.maxLoad = max;
+    // }
 
     public double getLoad() {
         return this.load;
