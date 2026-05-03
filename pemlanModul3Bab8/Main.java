@@ -1,5 +1,6 @@
 package tugas_praktikum.pemlanModul3Bab8;
 
+import tugas_praktikum.pemlanModul3Bab8.Data.Burung;
 import tugas_praktikum.pemlanModul3Bab8.Data.Hewan;
 import tugas_praktikum.pemlanModul3Bab8.Data.Manusia;
 
@@ -19,6 +20,16 @@ public class Main {
         String namaHewan = scanner.nextLine();
         System.out.print("Masukkan Umur Hewan   : ");
         int umurHewan = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("\n=== Input Data Burung (Objek Baru) ===");
+        System.out.print("Masukkan Nama Burung  : ");
+        String namaBurung = scanner.nextLine();
+        System.out.print("Masukkan Umur Burung  : ");
+        int umurBurung = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Masukkan Warna Bulu   : ");
+        String warnaBulu = scanner.nextLine();
 
         System.out.println("\n===========================");
         System.out.println("Percobaan Objek Manusia");
@@ -36,6 +47,16 @@ public class Main {
         hewan.bersuara();
         hewan.tampilkanNama();
         hewan.tampilkanUmur();
+
+        System.out.println("\nPercobaan Objek Burung (Dengan Method Berbeda)");
+        Burung burung = new Burung(namaBurung, umurBurung, warnaBulu);
+        burung.makan();
+        burung.berjalan();
+        burung.bersuara();
+        burung.tampilkanNama();
+        burung.tampilkanUmur();
+        burung.terbang();
+        burung.tampilkanJenisBulu();
 
         scanner.close();
     }
