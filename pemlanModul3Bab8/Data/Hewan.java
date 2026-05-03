@@ -1,6 +1,6 @@
 package tugas_praktikum.pemlanModul3Bab8.Data;
 
-public class Hewan implements MakhlukHidup, Identitas {
+public class Hewan implements MakhlukHidup {
     private String nama;
     private int umur;
 
@@ -24,12 +24,10 @@ public class Hewan implements MakhlukHidup, Identitas {
         System.out.println("Suaranya nggak jelas");
     }
 
-    @Override
     public void tampilkanNama() {
         System.out.println("Nama hewan: " + this.nama);
     }
 
-    @Override
     public void tampilkanUmur() {
         System.out.println("Umur hewan: " + this.umur);
     }
