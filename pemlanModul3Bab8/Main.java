@@ -6,12 +6,12 @@ import tugas_praktikum.pemlanModul3Bab8.Data.Manusia;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Percobaan Objek Manusia");
-        Manusia manusia = new Manusia("Budi", 20);
-        manusia.makan();
-        manusia.berjalan();
-        manusia.bersuara();
-        manusia.tampilkanNama();
-        manusia.tampilkanUmur();
+        Manusia muhamfiqo = new Manusia("Muhamfiqo", 19);
+        muhamfiqo.makan();
+        muhamfiqo.berjalan();
+        muhamfiqo.bersuara();
+        muhamfiqo.tampilkanNama();
+        muhamfiqo.tampilkanUmur();
 
         System.out.println("\nPercobaan Objek Hewan");
         Hewan hewan = new Hewan("Kucing", 3);
